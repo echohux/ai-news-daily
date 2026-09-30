@@ -1,0 +1,394 @@
+{
+  "generatedAt": "2026-09-30T01:24:14.885Z",
+  "date": "2026-09-30",
+  "total": 20,
+  "sources": [
+    "华尔街见闻",
+    "界面新闻",
+    "量子位",
+    "IT之家",
+    "36氪",
+    "虎嗅",
+    "观察者网",
+    "Google 新闻·云计算（中文）",
+    "Google 新闻·云厂商（中文）",
+    "Google 新闻·数据中心与算力（中文）",
+    "Google 新闻·芯片半导体（中文）",
+    "Google 新闻·AI大模型（中文）",
+    "Google 新闻·国际经贸（中文）"
+  ],
+  "overview": "本期共收录 20 条 AI 领域舆情要闻，覆盖 4 个栏目，主要集中在 AI大模型（14 条）、云计算行业（2 条）、宏观经济与国际关系（2 条）。",
+  "hotspots": [
+    {
+      "title": "阶跃终端STEPX Neo智能体手机已获得工信部入网许可",
+      "link": "https://www.jiemian.com/article/15153272.html",
+      "source": "界面新闻",
+      "host": "jiemian.com",
+      "domain": "ai",
+      "summary": "9月30日，界面新闻获悉，阶跃终端STEPX Neo智能体手机已获得工信部入网许可。据悉，该机为阶跃终端首款大模型原生智能体手机，从模型、系统、硬件等方面为智能体原生打造，曾于世界人工智能大会（WAIC）2026上首次公开亮相，预计将于10月正式上市。（界面新闻 陆柯言）",
+      "publishedAt": "2026-09-30T00:59:44.000Z",
+      "ts": 1790729984000,
+      "weight": 4
+    },
+    {
+      "title": "53亿美元涌入场外供电：私募巨头争夺AI数据中心能源入口",
+      "link": "https://wallstreetcn.com/articles/3782784",
+      "source": "华尔街见闻",
+      "host": "wallstreetcn.com",
+      "domain": "cloud",
+      "summary": "AI数据中心的电力瓶颈，正在催生一场规模庞大的场外供电融资浪潮。黑石、KKR、阿波罗、Brookfield等私募巨头正以项目投资、股权入股、设备融资等多种方式涌入这一赛道，试图绕开漫长的电网建设周期，为数据中心直接提供可用电力。",
+      "publishedAt": "2026-09-30T00:36:03.000Z",
+      "ts": 1790728563000,
+      "weight": 4
+    },
+    {
+      "title": "尽管油价走低、尽管美联储高管“放鸽”，美债收益率依旧在走高",
+      "link": "https://wallstreetcn.com/articles/3782785",
+      "source": "华尔街见闻",
+      "host": "wallstreetcn.com",
+      "domain": "macro",
+      "summary": "美国国债抛售潮持续蔓延，长端收益率屡创新高，令市场对利率前景的判断愈发复杂。",
+      "publishedAt": "2026-09-30T00:30:55.000Z",
+      "ts": 1790728255000,
+      "weight": 4
+    },
+    {
+      "title": "贝恩资本据悉考虑以150亿美元收购数据中心企业Edged",
+      "link": "https://www.jiemian.com/article/15153224.html",
+      "source": "界面新闻",
+      "host": "jiemian.com",
+      "domain": "cloud",
+      "summary": "9月30日消息，据报道，贝恩资本正考虑收购由美国科氏工业集团旗下公司持有的数据中心企业Edged，若交易达成，将成为贝恩资本进军美国人工智能基础设施领域的重要举措。据悉，贝恩资本已与Edged就收购事宜进行接洽。科氏集团旗下科氏房地产投资公司此前已为Edged寻求买家，该交易对E…",
+      "publishedAt": "2026-09-30T00:30:55.000Z",
+      "ts": 1790728255000,
+      "weight": 4
+    }
+  ],
+  "deepdives": [
+    {
+      "title": "OpenAI首席执行官称AI安全成为焦点，相信投资者会对IPO保持耐心",
+      "link": "https://36kr.com/newsflashes/4005180719583112?f=rss",
+      "source": "36氪",
+      "host": "36kr.com",
+      "domain": "ai",
+      "summary": "OpenAI首席执行官Sam Altman表示，公司希望在没有作为新上市公司的压力下，平稳度过人工智能安全担忧加剧的时期，并相信投资者会对公司IPO计划保持“耐心”。Altman周二接受媒体采访时表示，公司目前正在“调整”以适应人工智能能力的“新水平”以及随之而来的额外安全要求。“我们只是想站稳脚跟，确保我们了解如何以…",
+      "publishedAt": "2026-09-30T01:05:17.000Z",
+      "ts": 1790730317000,
+      "weight": 3
+    },
+    {
+      "title": "特朗普会晤人工智能业界领袖，反对新增联邦安全监管",
+      "link": "https://36kr.com/newsflashes/4005178735497090?f=rss",
+      "source": "36氪",
+      "host": "36kr.com",
+      "domain": "ai",
+      "summary": "在全球对人工智能威胁的担忧日益加剧之际，美国总统唐纳德·特朗普在白宫与人工智能行业高管会面后，否定了针对人工智能出台新联邦法规的想法。特朗普周二与二十多位硅谷领袖共进午餐后表示，现有法律足以保护美国人免受AI潜在风险的影响。特朗普与嘉宾在白宫东厅短暂会见记者时表示：“有人认为应该进行大量自我监管，而司法部、联邦调查局等…",
+      "publishedAt": "2026-09-30T00:58:18.000Z",
+      "ts": 1790729898000,
+      "weight": 3
+    },
+    {
+      "title": "智能代理购物蓬勃兴起，摩根士丹利看好Shopify成为AI赛道赢家",
+      "link": "https://36kr.com/newsflashes/4005156326412160?f=rss",
+      "source": "36氪",
+      "host": "36kr.com",
+      "domain": "ai",
+      "summary": "摩根士丹利分析师亚当・伍德重申观点：随着智能代理购物发展势头增强，Shopify（SHOP）有望从中受益。伍德在周二发给客户的研报中写道：“Shopify 依靠交易变现，而非广告曝光变现。这使得该平台并不依赖需求的来源渠道；在消费者发现商品的渠道日趋碎片化的大环境下，这一模式更具价值。”伍德认为，这一趋势目前尚不会改变…",
+      "publishedAt": "2026-09-30T00:52:29.000Z",
+      "ts": 1790729549000,
+      "weight": 3
+    },
+    {
+      "title": "港股配置主线浮出水面， “红利底仓+AI进攻”渐成机构共识",
+      "link": "https://36kr.com/newsflashes/4005173331545985?f=rss",
+      "source": "36氪",
+      "host": "36kr.com",
+      "domain": "ai",
+      "summary": "随着三季度行情步入尾声，港股市场在经历9月的震荡回调后，正迎来新一轮布局窗口期。多家券商近期密集发布港股配置观点，普遍认为外部扰动边际缓和，估值收缩空间有限，回调有望提供布局时机。配置层面，“红利底仓+AI进攻”的杠铃策略逐渐成为机构主流共识，成长端关注AI应用链，防御端则锚定红利资产。分析人士认为，随着三季报披露期临…",
+      "publishedAt": "2026-09-30T00:50:49.000Z",
+      "ts": 1790729449000,
+      "weight": 3
+    }
+  ],
+  "knowledgePoint": {
+    "term": "智算中心（AIDC）",
+    "explanation": "智算中心是以 AI 算力为核心的基础设施，采用 GPU/NPU 等加速芯片组成大规模计算集群，面向大模型训练、推理等高算力场景提供算力服务。",
+    "analogy": "像\"AI 专属发电厂\"：普通数据中心像家用电网，通吃所有负载；智算中心则是专为 AI 高压电器（大模型）设计的高压专线电厂，电流更猛、负荷更聚焦。"
+  },
+  "domains": [
+    {
+      "id": "ai",
+      "name": "AI大模型",
+      "color": "#1677ff"
+    },
+    {
+      "id": "cloud",
+      "name": "云计算行业",
+      "color": "#13c2c2"
+    },
+    {
+      "id": "macro",
+      "name": "宏观经济与国际关系",
+      "color": "#f5222d"
+    },
+    {
+      "id": "hardware",
+      "name": "服务器和核心部件",
+      "color": "#fa8c16"
+    }
+  ],
+  "groups": [
+    {
+      "id": "ai",
+      "name": "AI大模型",
+      "color": "#1677ff",
+      "count": 14,
+      "articles": [
+        {
+          "title": "OpenAI首席执行官称AI安全成为焦点，相信投资者会对IPO保持耐心",
+          "link": "https://36kr.com/newsflashes/4005180719583112?f=rss",
+          "source": "36氪",
+          "host": "36kr.com",
+          "domain": "ai",
+          "summary": "OpenAI首席执行官Sam Altman表示，公司希望在没有作为新上市公司的压力下，平稳度过人工智能安全担忧加剧的时期，并相信投资者会对公司IPO计划保持“耐心”。Altman周二接受媒体采访时表示，公司目前正在“调整”以适应人工智能能力的“新水平”以及随之而来的额外安全要求。“我们只是想站稳脚跟，确保我们了解如何以…",
+          "publishedAt": "2026-09-30T01:05:17.000Z",
+          "ts": 1790730317000,
+          "weight": 3
+        },
+        {
+          "title": "阶跃终端STEPX Neo智能体手机已获得工信部入网许可",
+          "link": "https://www.jiemian.com/article/15153272.html",
+          "source": "界面新闻",
+          "host": "jiemian.com",
+          "domain": "ai",
+          "summary": "9月30日，界面新闻获悉，阶跃终端STEPX Neo智能体手机已获得工信部入网许可。据悉，该机为阶跃终端首款大模型原生智能体手机，从模型、系统、硬件等方面为智能体原生打造，曾于世界人工智能大会（WAIC）2026上首次公开亮相，预计将于10月正式上市。（界面新闻 陆柯言）",
+          "publishedAt": "2026-09-30T00:59:44.000Z",
+          "ts": 1790729984000,
+          "weight": 4
+        },
+        {
+          "title": "特朗普会晤人工智能业界领袖，反对新增联邦安全监管",
+          "link": "https://36kr.com/newsflashes/4005178735497090?f=rss",
+          "source": "36氪",
+          "host": "36kr.com",
+          "domain": "ai",
+          "summary": "在全球对人工智能威胁的担忧日益加剧之际，美国总统唐纳德·特朗普在白宫与人工智能行业高管会面后，否定了针对人工智能出台新联邦法规的想法。特朗普周二与二十多位硅谷领袖共进午餐后表示，现有法律足以保护美国人免受AI潜在风险的影响。特朗普与嘉宾在白宫东厅短暂会见记者时表示：“有人认为应该进行大量自我监管，而司法部、联邦调查局等…",
+          "publishedAt": "2026-09-30T00:58:18.000Z",
+          "ts": 1790729898000,
+          "weight": 3
+        },
+        {
+          "title": "研扬推出无风扇 \"Panther Lake\" 迷你主机，内置 Frore AirJet 超声波振膜主动散热",
+          "link": "https://www.ithome.com/1/008/576.htm",
+          "source": "IT之家",
+          "host": "ithome.com",
+          "domain": "ai",
+          "summary": "IT之家 9 月 30 日消息，研扬 (AAEON) 昨日宣布推出基于第 3 代英特尔酷睿 Ultra 处理器 \"Panther Lake\" 的 UP Xtreme PTL Edge Air 迷你主机。",
+          "publishedAt": "2026-09-30T00:53:24.000Z",
+          "ts": 1790729604000,
+          "weight": 3
+        },
+        {
+          "title": "智能代理购物蓬勃兴起，摩根士丹利看好Shopify成为AI赛道赢家",
+          "link": "https://36kr.com/newsflashes/4005156326412160?f=rss",
+          "source": "36氪",
+          "host": "36kr.com",
+          "domain": "ai",
+          "summary": "摩根士丹利分析师亚当・伍德重申观点：随着智能代理购物发展势头增强，Shopify（SHOP）有望从中受益。伍德在周二发给客户的研报中写道：“Shopify 依靠交易变现，而非广告曝光变现。这使得该平台并不依赖需求的来源渠道；在消费者发现商品的渠道日趋碎片化的大环境下，这一模式更具价值。”伍德认为，这一趋势目前尚不会改变…",
+          "publishedAt": "2026-09-30T00:52:29.000Z",
+          "ts": 1790729549000,
+          "weight": 3
+        },
+        {
+          "title": "港股配置主线浮出水面， “红利底仓+AI进攻”渐成机构共识",
+          "link": "https://36kr.com/newsflashes/4005173331545985?f=rss",
+          "source": "36氪",
+          "host": "36kr.com",
+          "domain": "ai",
+          "summary": "随着三季度行情步入尾声，港股市场在经历9月的震荡回调后，正迎来新一轮布局窗口期。多家券商近期密集发布港股配置观点，普遍认为外部扰动边际缓和，估值收缩空间有限，回调有望提供布局时机。配置层面，“红利底仓+AI进攻”的杠铃策略逐渐成为机构主流共识，成长端关注AI应用链，防御端则锚定红利资产。分析人士认为，随着三季报披露期临…",
+          "publishedAt": "2026-09-30T00:50:49.000Z",
+          "ts": 1790729449000,
+          "weight": 3
+        },
+        {
+          "title": "房利美、房地美政策调整，Fair Isaac公司股价暴跌26%",
+          "link": "https://36kr.com/newsflashes/4005172527403141?f=rss",
+          "source": "36氪",
+          "host": "36kr.com",
+          "domain": "ai",
+          "summary": "数据分析公司Fair Isaac（FICO）股价大跌超 26%，导火索是美国联邦住房金融局局长比尔・普尔特出台抵押贷款定价新规。普尔特在 X 平台发文表示，房利美与房地美将改用统一定价表格核算抵押贷款成本，这套定价体系会纳入万塔奇评分（VantageScore）的数据。Fair Isaac的 FICO 信用评分与 Va…",
+          "publishedAt": "2026-09-30T00:48:56.000Z",
+          "ts": 1790729336000,
+          "weight": 3
+        },
+        {
+          "title": "OpenAI CEO 奥尔特曼谈上市：需先做好 AI 安全承诺，暂无明确时间表",
+          "link": "https://www.ithome.com/1/008/575.htm",
+          "source": "IT之家",
+          "host": "ithome.com",
+          "domain": "ai",
+          "summary": "IT之家 9 月 30 日消息，数月以来，外界一直都在猜测 OpenAI 究竟何时会启动上市流程。首席执行官萨姆 · 奥尔特曼（Sam Altman）表示，只有当这家企业能够就模型安全作出更完善的承诺之后，才会考虑上市；目前尚且没有确定的时间节点。",
+          "publishedAt": "2026-09-30T00:48:25.000Z",
+          "ts": 1790729305000,
+          "weight": 3
+        },
+        {
+          "title": "OpenAI 奥尔特曼：AI 的影响将超过工业革命，当下是进入就业市场的最佳时机",
+          "link": "https://www.ithome.com/1/008/574.htm",
+          "source": "IT之家",
+          "host": "ithome.com",
+          "domain": "ai",
+          "summary": "IT之家 9 月 30 日消息，当地时间 29 日，奥尔特曼在旧金山举行的 OpenAI DevDay 大会上宣布推出新 AI 智能体产品 Dots，并描绘了一幅宏大愿景。",
+          "publishedAt": "2026-09-30T00:37:08.000Z",
+          "ts": 1790728628000,
+          "weight": 3
+        },
+        {
+          "title": "美议员提出重磅法案：政府出台安全防护机制前，AI 不得进行递归式自我改进",
+          "link": "https://www.ithome.com/1/008/570.htm",
+          "source": "IT之家",
+          "host": "ithome.com",
+          "domain": "ai",
+          "summary": "IT之家 9 月 30 日消息，当地时间 28 日，据美国 CNBC 报道，代表硅谷选区的民主党联邦众议员罗 · 康纳准备提出一项 AI 监管法案，引入严格责任标准， 并禁止 AI 在缺乏政府安全防护机制的情况下进行递归式自我改进 。",
+          "publishedAt": "2026-09-30T00:17:55.000Z",
+          "ts": 1790727475000,
+          "weight": 3
+        },
+        {
+          "title": "AI早报 | AMD拟收购李飞飞公司World Labs，交易金额82亿美元；Anthropic与英伟达就智能体安全问题展开合作",
+          "link": "https://www.jiemian.com/article/15152069.html",
+          "source": "界面新闻",
+          "host": "jiemian.com",
+          "domain": "ai",
+          "summary": "影石正在研发主打拍摄的智能眼镜；OpenAI因安全隐患取消最新模型发布计划。",
+          "publishedAt": "2026-09-30T00:15:00.000Z",
+          "ts": 1790727300000,
+          "weight": 4
+        },
+        {
+          "title": "特朗普政府推出人工智能驱动的政府网站",
+          "link": "https://www.jiemian.com/article/15153153.html",
+          "source": "界面新闻",
+          "host": "jiemian.com",
+          "domain": "ai",
+          "summary": "美国特朗普政府9月29日推出一个由人工智能驱动的联邦政府信息网站，这个域名为America.gov的网站已上线。美联社报道称，该网站旨在简化公众获取联邦政府信息和服务的途径。不过，这篇报道质疑其问答功能在一些敏感问题上的客观性。（新华社）",
+          "publishedAt": "2026-09-29T23:58:16.000Z",
+          "ts": 1790726296000,
+          "weight": 4
+        },
+        {
+          "title": "IT早报 0930：华为 Mate 90 定档 10 月 1 日发布并开售；OpenAI 发布 GPT-6.1 Sol；123 云盘就空间调整致歉；5999 元起 iQOO 16 手机发布...",
+          "link": "https://www.ithome.com/1/008/561.htm",
+          "source": "IT之家",
+          "host": "ithome.com",
+          "domain": "ai",
+          "summary": "“IT早报”时间，大家好，现在是 2026 年 9 月 30 日星期三，今天的重要科技资讯有： 1.",
+          "publishedAt": "2026-09-29T23:57:06.000Z",
+          "ts": 1790726226000,
+          "weight": 3
+        },
+        {
+          "title": "OpenAI 推出全天候 AI 智能体 Dots，相关域名已被马斯克拿下",
+          "link": "https://www.ithome.com/1/008/559.htm",
+          "source": "IT之家",
+          "host": "ithome.com",
+          "domain": "ai",
+          "summary": "IT之家 9 月 30 日消息，当地时间周二，OpenAI 发布了一款名叫 Dots 的新产品。这是一款可以持续运行的人工智能智能体，拥有一个软乎乎、圆滚滚的卡通形象。虽说这个色彩明快的虚拟形象或许能博得大家一笑，但这次发布会过后，笑得最开心的人恐怕要数埃隆 · 马斯克（Elon Musk）。他曾是 OpenAI 的创…",
+          "publishedAt": "2026-09-29T23:37:25.000Z",
+          "ts": 1790725045000,
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "cloud",
+      "name": "云计算行业",
+      "color": "#13c2c2",
+      "count": 2,
+      "articles": [
+        {
+          "title": "53亿美元涌入场外供电：私募巨头争夺AI数据中心能源入口",
+          "link": "https://wallstreetcn.com/articles/3782784",
+          "source": "华尔街见闻",
+          "host": "wallstreetcn.com",
+          "domain": "cloud",
+          "summary": "AI数据中心的电力瓶颈，正在催生一场规模庞大的场外供电融资浪潮。黑石、KKR、阿波罗、Brookfield等私募巨头正以项目投资、股权入股、设备融资等多种方式涌入这一赛道，试图绕开漫长的电网建设周期，为数据中心直接提供可用电力。",
+          "publishedAt": "2026-09-30T00:36:03.000Z",
+          "ts": 1790728563000,
+          "weight": 4
+        },
+        {
+          "title": "贝恩资本据悉考虑以150亿美元收购数据中心企业Edged",
+          "link": "https://www.jiemian.com/article/15153224.html",
+          "source": "界面新闻",
+          "host": "jiemian.com",
+          "domain": "cloud",
+          "summary": "9月30日消息，据报道，贝恩资本正考虑收购由美国科氏工业集团旗下公司持有的数据中心企业Edged，若交易达成，将成为贝恩资本进军美国人工智能基础设施领域的重要举措。据悉，贝恩资本已与Edged就收购事宜进行接洽。科氏集团旗下科氏房地产投资公司此前已为Edged寻求买家，该交易对E…",
+          "publishedAt": "2026-09-30T00:30:55.000Z",
+          "ts": 1790728255000,
+          "weight": 4
+        }
+      ]
+    },
+    {
+      "id": "macro",
+      "name": "宏观经济与国际关系",
+      "color": "#f5222d",
+      "count": 2,
+      "articles": [
+        {
+          "title": "尽管油价走低、尽管美联储高管“放鸽”，美债收益率依旧在走高",
+          "link": "https://wallstreetcn.com/articles/3782785",
+          "source": "华尔街见闻",
+          "host": "wallstreetcn.com",
+          "domain": "macro",
+          "summary": "美国国债抛售潮持续蔓延，长端收益率屡创新高，令市场对利率前景的判断愈发复杂。",
+          "publishedAt": "2026-09-30T00:30:55.000Z",
+          "ts": 1790728255000,
+          "weight": 4
+        },
+        {
+          "title": "麦当劳 AI 定价系统曝光：同款汉堡隔两英里价差达 21%",
+          "link": "https://www.ithome.com/1/008/563.htm",
+          "source": "IT之家",
+          "host": "ithome.com",
+          "domain": "macro",
+          "summary": "IT之家 9 月 30 日消息，据路透社报道，麦当劳正越来越多地借助人工智能，为美国本土以及部分海外市场制定菜单价格。这套方案意在提升总部的利润，但有可能招致消费者不满，同时还会引来反垄断机构的审查。 人工智能重点测算的一项定价参考因素，就是预估每家门店顾客的支付意愿。",
+          "publishedAt": "2026-09-29T23:59:27.000Z",
+          "ts": 1790726367000,
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "id": "hardware",
+      "name": "服务器和核心部件",
+      "color": "#fa8c16",
+      "count": 2,
+      "articles": [
+        {
+          "title": "奥特曼：OpenAI正推出OpenAI私有智能的预览版本",
+          "link": "https://36kr.com/newsflashes/4005170918281096?f=rss",
+          "source": "36氪",
+          "host": "36kr.com",
+          "domain": "hardware",
+          "summary": "OpenAI CEO奥特曼宣布，OpenAI正推出OpenAI私有智能的预览版本，名为OpenAI私有智能（OpenAI Private Intelligence）。该产品能让用户对自身数据拥有更强管控权，同时依然可以调用OpenAI模型最顶尖的能力。奥特曼称：“零数据留存搭配私有安全处理，在完全不在我们服务器存储你的…",
+          "publishedAt": "2026-09-30T00:44:12.000Z",
+          "ts": 1790729052000,
+          "weight": 3
+        },
+        {
+          "title": "中信证券：光模块温控正由“配套环节”升级为“性能决定环节”",
+          "link": "https://www.jiemian.com/article/15153178.html",
+          "source": "界面新闻",
+          "host": "jiemian.com",
+          "domain": "hardware",
+          "summary": "",
+          "publishedAt": "2026-09-30T00:13:07.000Z",
+          "ts": 1790727187000,
+          "weight": 4
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+name: Daily AI News Publish
+
+on:
+  schedule:
+    # 北京时间 09:12 = UTC 01:12（Actions 定时可能有少量延迟，属正常）
+    - cron: '12 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Publish AI 信息日报
+        env:
+          # Actions 自动注入的仓库令牌（仅本仓库读写权限），无需用户管理任何密钥
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node publish-github.mjs
