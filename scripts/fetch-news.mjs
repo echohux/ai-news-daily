@@ -42,15 +42,43 @@ async function fetchSource(src) {
   }
 }
 
+/** 标题归一化：去空白/标点/Google 来源后缀，用于相似度比对。 */
+function normTitle(t) {
+  return t
+    .toLowerCase()
+    .replace(/\s+/g, '')
+    .replace(/[|｜].*$/, '')
+    .replace(/[-–_—·,，。.！!?？:：()（）【】\[\]"'']/g, '')
+}
+
+/** bigram Jaccard 相似度，用于识别不同源抓到的同一条新闻。 */
+function titleSimilarity(a, b) {
+  if (!a || !b) return 0
+  const A = new Set()
+  const B = new Set()
+  for (let i = 0; i < a.length - 1; i++) A.add(a.slice(i, i + 2))
+  for (let i = 0; i < b.length - 1; i++) B.add(b.slice(i, i + 2))
+  if (!A.size || !B.size) return 0
+  let inter = 0
+  for (const x of A) if (B.has(x)) inter++
+  return (2 * inter) / (A.size + B.size)
+}
+
 function dedupe(items) {
   const seen = new Set()
   const out = []
   for (const it of items) {
     const key = (it.link || it.title).toLowerCase().replace(/[#?].*$/, '')
-    const titleKey = it.title.toLowerCase().slice(0, 80)
-    if (seen.has(key) || seen.has(titleKey)) continue
+    const nt = normTitle(it.title)
+    const similar = out.some((o) => {
+      const on = normTitle(o.title)
+      return (
+        on === nt ||
+        (nt.length >= 12 && on.length >= 12 && titleSimilarity(on, nt) >= 0.75)
+      )
+    })
+    if (seen.has(key) || similar) continue
     seen.add(key)
-    seen.add(titleKey)
     out.push(it)
   }
   return out
@@ -150,7 +178,7 @@ function selectDeepdives(articles, hotspots) {
     .slice(0, DEEPDIVE_LIMIT)
 }
 
-/** 每天一个知识点：从当日入选新闻中统计术语关键词命中数，选命中最多的术语；无命中返回 null。 */
+/** 每天一个知识点：从当日入选新闻中统计术语关键词命中数，选命中最多的术语。 */
 function selectKnowledgePoint(articles) {
   let best = null
   let bestHits = 0
@@ -165,13 +193,20 @@ function selectKnowledgePoint(articles) {
       best = kp
     }
   }
-  return best ? { term: best.term, explanation: best.explanation, analogy: best.analogy } : null
+  if (best) return { term: best.term, explanation: best.explanation, analogy: best.analogy }
+  // 兜底：当日无术语命中时，按文章领域分布选一个最相关术语，保证「每天一个知识点」常驻
+  const domCount = {}
+  for (const a of articles) domCount[a.domain] = (domCount[a.domain] || 0) + 1
+  const topDomain = Object.entries(domCount).sort((a, b) => b[1] - a[1])[0]?.[0]
+  const DOMAIN_TERM = { hardware: 'HBM（高带宽内存）', ai: 'RAG（检索增强生成）', cloud: '智算中心（AIDC）' }
+  const fallback = KNOWLEDGE_POINTS.find((kp) => kp.term === DOMAIN_TERM[topDomain]) || KNOWLEDGE_POINTS[0]
+  return { term: fallback.term, explanation: fallback.explanation, analogy: fallback.analogy }
 }
 
-/** 根据最终选中的新闻分组；count 与页面展示数量保持一致。 */
-function groupByDomain(articles) {
+/** 根据最终选中的新闻分组（exclude：已在热点/深度聚焦展示的文章，避免跨版块重复）。 */
+function groupByDomain(articles, exclude = new Set()) {
   return DOMAINS.map((d) => {
-    const list = articles.filter((a) => a.domain === d.id)
+    const list = articles.filter((a) => a.domain === d.id && !exclude.has(a))
     return { id: d.id, name: d.name, color: d.color, count: list.length, articles: list }
   }).filter((g) => g.count > 0)
 }
@@ -207,10 +242,10 @@ async function main() {
         process.exitCode = 1
         return
       }
-      const groups = groupByDomain(articles)
       const hotspots = selectHotspots(articles)
       const deepdives = selectDeepdives(articles, hotspots)
       const knowledgePoint = selectKnowledgePoint(articles)
+      const groups = groupByDomain(articles, new Set([...hotspots, ...deepdives]))
       await writeFile(OUT_FILE, JSON.stringify({
         ...prev,
         total: articles.length,
@@ -232,7 +267,6 @@ async function main() {
     process.exitCode = 1
     return
   }
-  const groups = groupByDomain(articles)
   const hotspots = selectHotspots(articles)
   // 热点简介增强：RSS 摘要过短时，尝试抓取文章页的描述作为简介
   for (const hot of hotspots) {
@@ -243,6 +277,8 @@ async function main() {
   }
   const deepdives = selectDeepdives(articles, hotspots)
   const knowledgePoint = selectKnowledgePoint(articles)
+  // 快讯栏目排除已在「热点」「深度聚焦」展示的文章，避免跨版块重复
+  const groups = groupByDomain(articles, new Set([...hotspots, ...deepdives]))
   const headlines = articles.map((a) => ({
     title: a.title,
     domainName: DOMAINS.find((d) => d.id === a.domain)?.name || a.domain,
